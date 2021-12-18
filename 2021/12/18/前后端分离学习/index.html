@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>前后端分离学习 | MyBlog</title><meta name="author" content="fyfnb"><meta name="copyright" content="fyfnb"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前后端分离前后端分离就是将一个应用的前端代码和后端代码分开写。 传统的javaweb开发中，前端使用jsp进行开发，jsp不是由后端开发着来独立完成的。 前端-&gt;HTML-&gt;后端-&gt;jsp，传统后端的工作是把前端给过来的东西嵌套到jsp上，开发效率极低。于是就出现了前后端分离的方式进行开发，前端独立编写客户端代码，后端也只需要独立编写服务端代码提供数据接口就可以了，前端通过aja">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前后端分离学习">
+<meta property="og:url" content="http://example.com/2021/12/18/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="MyBlog">
+<meta property="og:description" content="前后端分离前后端分离就是将一个应用的前端代码和后端代码分开写。 传统的javaweb开发中，前端使用jsp进行开发，jsp不是由后端开发着来独立完成的。 前端-&gt;HTML-&gt;后端-&gt;jsp，传统后端的工作是把前端给过来的东西嵌套到jsp上，开发效率极低。于是就出现了前后端分离的方式进行开发，前端独立编写客户端代码，后端也只需要独立编写服务端代码提供数据接口就可以了，前端通过aja">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg">
+<meta property="article:published_time" content="2021-12-18T15:55:27.000Z">
+<meta property="article:modified_time" content="2021-12-18T15:55:59.213Z">
+<meta property="article:author" content="fyfnb">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/12/18/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%AD%A6%E4%B9%A0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '前后端分离学习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-18 23:55:59'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="MyBlog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/rubic.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MyBlog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">前后端分离学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-18T15:55:27.000Z" title="发表于 2021-12-18 23:55:27">2021-12-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-18T15:55:59.213Z" title="更新于 2021-12-18 23:55:59">2021-12-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="前后端分离学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前后端分离"><a href="#前后端分离" class="headerlink" title="前后端分离"></a>前后端分离</h1><p>前后端分离就是将一个应用的前端代码和后端代码分开写。</p>
+<p>传统的javaweb开发中，前端使用jsp进行开发，jsp不是由后端开发着来独立完成的。</p>
+<p>前端-&gt;HTML-&gt;后端-&gt;jsp，传统后端的工作是把前端给过来的东西嵌套到jsp上，开发效率极低。于是就出现了前后端分离的方式进行开发，前端独立编写客户端代码，后端也只需要独立编写服务端代码提供数据接口就可以了，前端通过ajax请求来访问后端的接口，将Model展示到View中即可。</p>
+<p>前后端开发者只需要提前约定好接口文档（URL，参数，数据类型等等），然后分别独立开发即可，前端可以造假数据进行测试，完全不需要依赖于后端，后端只需要能返回所需要的数据就可以，最后完成前后端集成即可，真正实现了前后端应用的解耦合，极大的提升了开发的效率。</p>
+<p>前端应用：负责数据展示和用户交互</p>
+<p>后端应用：负责数据处理接口</p>
+<p>前端HTML通过Ajax-&gt;RestFul后端数据接口。</p>
+<p>前后端分离就是将一个单体应用拆分成两个独立的应用，前端应用和后端应用以JSON格式进行数据交互。</p>
+<h3 id="实现技术："><a href="#实现技术：" class="headerlink" title="实现技术："></a>实现技术：</h3><p>Spring boot + vue</p>
+<p>Springboot进行后端应用开发，使用vue进行前端应用开发</p>
+<h2 id="Ajax-amp-JQuery"><a href="#Ajax-amp-JQuery" class="headerlink" title="Ajax&amp;JQuery"></a>Ajax&amp;JQuery</h2><h2 id="什么是Ajax"><a href="#什么是Ajax" class="headerlink" title="什么是Ajax"></a>什么是Ajax</h2><ul>
+<li>Asynchronous JavaScript and XML 异步的js和xml</li>
+<li>ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术</li>
+<li>Ajax不是一种新的编程语言，而是一种用于创建更好更快的以及交互性更强的web应用程序的技术</li>
+</ul>
+<p>Ajax的使用： 百度的搜索栏输入一个字段后不需要提交就会自动给你找到相关的字段补全你的搜索内容。</p>
+<p>请求类型为<code>Type = xhr</code>为ajax请求</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>传统的网页想要提交一个表单，都要重新加载整个网页</li>
+<li>采用ajax技术的网页，通过在服务器后端进行少量的数据交互，就可以实现局部的异步更新</li>
+<li>ajax技术可以创建更丰富、更好用的web页面。</li>
+</ul>
+<h2 id="JQuery-ajax"><a href="#JQuery-ajax" class="headerlink" title="JQuery.ajax"></a>JQuery.ajax</h2><ul>
+<li>Ajax的核心是XMLhttpRequest对象XHR。XHR为向服务器发送请求和解析服务器响应提供了接口，能够以异步方式从服务器获取新数据。</li>
+<li>jQuery提供多个和Ajax有关的方法</li>
+<li>通过jQuery AJAX方法 可以使用Http Get和Post从远程服务器上请求文本HTML、XML或者JSON，同时可以把这些外部数据直接载入网页的备选元素中</li>
+<li>jQuery不是生产者，只是搬运工</li>
+<li>jQuery Ajax本质就是XMLHttpRequest，对他进行了封装，方便调用。</li>
+<li>jQuery是一个库，存放着js的大量函数。</li>
+</ul>
+<h3 id="使用jQuery的方式："><a href="#使用jQuery的方式：" class="headerlink" title="使用jQuery的方式："></a>使用jQuery的方式：</h3><p>主要是三个参数进行前后端交互：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;$&#123;pageContext.request.contextPath&#125;/static/js/jquery-3.6.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">    $.post(&#123;</span></span><br><span class="line"><span class="javascript">    <span class="attr">url</span>:<span class="string">&quot;$&#123;pageContext.request.contextPath&#125;/a1&quot;</span></span></span><br><span class="line"><span class="javascript">    <span class="attr">data</span>:&#123;<span class="string">&quot;name&quot;</span>,$(<span class="string">&quot;#username&quot;</span>).val()&#125;</span></span><br><span class="line"><span class="javascript">    <span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">    alert(data);</span></span><br><span class="line"><span class="javascript">    &#125;,</span></span><br><span class="line"><span class="javascript">    <span class="attr">error</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript"></span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">&#125;)</span></span><br><span class="line"><span class="javascript">&#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">用户名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;username&quot;</span> <span class="attr">onblur</span>=<span class="string">&quot;a()&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>需要的技术HTML CSS js</p>
+<p>js:</p>
+<ul>
+<li>函数： 闭包</li>
+<li>Dom<ul>
+<li>id,name,tag</li>
+<li>create,remove</li>
+</ul>
+</li>
+<li>Bom<ul>
+<li>window</li>
+<li>document</li>
+</ul>
+</li>
+</ul>
+<p>js(ES6):import,require</p>
+<h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h2 id="vue介绍"><a href="#vue介绍" class="headerlink" title="vue介绍"></a>vue介绍</h2><p>vue遵循Soc原则（关注点分离原则），只关注视图层的问题(js,html,css)，主要做的事情是给用户看和刷新后台给的数据。</p>
+<ul>
+<li>网络通信 axios</li>
+<li>页面跳转 vue-router</li>
+<li>转台管理 vuex</li>
+<li>Vue-UI: ICE</li>
+</ul>
+<p>回顾前端三要素：</p>
+<p>html 结构层</p>
+<p>css 表现层</p>
+<p>js 行为层</p>
+<p>Vue的异步通信使用axios（必须支持ES6）</p>
+<h3 id="vue-Element"><a href="#vue-Element" class="headerlink" title="vue+Element"></a>vue+Element</h3><p>Vue集成Element UI</p>
+<p>Element UI后台管理系统的主要标签：</p>
+<ul>
+<li>el-container：构建起整个页面的框架</li>
+<li>el-aside：构建起左侧菜单栏<ul>
+<li>el-menu：菜单栏中的内容的常用属性<ul>
+<li>default-openeds：默认展开的菜单，通过菜单的index值来关联，传递要打开的index值。</li>
+<li>default-active：默认选中的菜单。</li>
+</ul>
+</li>
+<li>el-submenu：可展开的菜单。<ul>
+<li>index下标，是文本类型，传递的时候要用数组和字符串进行传递。</li>
+</ul>
+</li>
+<li>template：对应el-submenu的菜单名</li>
+<li>i：设置菜单的图标，通过class属性设置，不同的图标名对应不同的图标<ul>
+<li>el-icon-message</li>
+<li>el-icon-menu</li>
+<li>el-icon-setting</li>
+</ul>
+</li>
+<li>el-menu-item：菜单的子节点，不可以再展开，常用属性：index</li>
+</ul>
+</li>
+</ul>
+<h4 id="通过Vue-Router来动态构建左侧菜单"><a href="#通过Vue-Router来动态构建左侧菜单" class="headerlink" title="通过Vue Router来动态构建左侧菜单"></a>通过Vue Router来动态构建左侧菜单</h4><ul>
+<li>导航1<ul>
+<li>页面1</li>
+<li>页面2</li>
+</ul>
+</li>
+<li>导航2<ul>
+<li>页面3</li>
+<li>页面4</li>
+</ul>
+</li>
+</ul>
+<h4 id="menu和router的绑定"><a href="#menu和router的绑定" class="headerlink" title="menu和router的绑定"></a>menu和router的绑定</h4><ol>
+<li><code>&lt;el-menu&gt;</code> 添加 <code>router</code>属性。</li>
+<li>再页面中添加一个<router-view>标签，动态渲染所选择的router，<code>&lt;router-view&gt;</code>可以用来嵌套。</li>
+<li>最核心的<code>&lt;el-menu-item&gt;</code>标签的index值就是要跳转的router。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">fyfnb</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2021/12/18/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%AD%A6%E4%B9%A0/">http://example.com/2021/12/18/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%AD%A6%E4%B9%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">MyBlog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/12/11/SpringMVC%E5%AD%A6%E4%B9%A0/"><img class="next-cover" src="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SpringMVC学习</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/rubic.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">fyfnb</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/fyfnb" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB"><span class="toc-number">1.</span> <span class="toc-text">前后端分离</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%8A%80%E6%9C%AF%EF%BC%9A"><span class="toc-number">1.0.1.</span> <span class="toc-text">实现技术：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ajax-amp-JQuery"><span class="toc-number">1.1.</span> <span class="toc-text">Ajax&amp;JQuery</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFAjax"><span class="toc-number">1.2.</span> <span class="toc-text">什么是Ajax</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">1.2.1.</span> <span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JQuery-ajax"><span class="toc-number">1.3.</span> <span class="toc-text">JQuery.ajax</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8jQuery%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.3.1.</span> <span class="toc-text">使用jQuery的方式：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue"><span class="toc-number">1.4.</span> <span class="toc-text">vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.5.</span> <span class="toc-text">vue介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vue-Element"><span class="toc-number">1.5.1.</span> <span class="toc-text">vue+Element</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87Vue-Router%E6%9D%A5%E5%8A%A8%E6%80%81%E6%9E%84%E5%BB%BA%E5%B7%A6%E4%BE%A7%E8%8F%9C%E5%8D%95"><span class="toc-number">1.5.1.1.</span> <span class="toc-text">通过Vue Router来动态构建左侧菜单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#menu%E5%92%8Crouter%E7%9A%84%E7%BB%91%E5%AE%9A"><span class="toc-number">1.5.1.2.</span> <span class="toc-text">menu和router的绑定</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/18/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%AD%A6%E4%B9%A0/" title="前后端分离学习"><img src="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前后端分离学习"/></a><div class="content"><a class="title" href="/2021/12/18/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%AD%A6%E4%B9%A0/" title="前后端分离学习">前后端分离学习</a><time datetime="2021-12-18T15:55:27.000Z" title="发表于 2021-12-18 23:55:27">2021-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/11/SpringMVC%E5%AD%A6%E4%B9%A0/" title="SpringMVC学习"><img src="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC学习"/></a><div class="content"><a class="title" href="/2021/12/11/SpringMVC%E5%AD%A6%E4%B9%A0/" title="SpringMVC学习">SpringMVC学习</a><time datetime="2021-12-11T12:51:31.000Z" title="发表于 2021-12-11 20:51:31">2021-12-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/07/Mybatis%E5%AD%A6%E4%B9%A0/" title="Mybatis学习"><img src="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Mybatis学习"/></a><div class="content"><a class="title" href="/2021/12/07/Mybatis%E5%AD%A6%E4%B9%A0/" title="Mybatis学习">Mybatis学习</a><time datetime="2021-12-07T02:55:24.000Z" title="发表于 2021-12-07 10:55:24">2021-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/07/myblog/" title="myblog"><img src="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="myblog"/></a><div class="content"><a class="title" href="/2021/12/07/myblog/" title="myblog">myblog</a><time datetime="2021-12-07T02:48:54.000Z" title="发表于 2021-12-07 10:48:54">2021-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/03/Spring%E5%AD%A6%E4%B9%A0/" title="Spring学习"><img src="https://img.3dmgame.com/uploads/allimg/170516/316-1F516162Z1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring学习"/></a><div class="content"><a class="title" href="/2021/12/03/Spring%E5%AD%A6%E4%B9%A0/" title="Spring学习">Spring学习</a><time datetime="2021-12-03T07:05:42.000Z" title="发表于 2021-12-03 15:05:42">2021-12-03</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By fyfnb</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
